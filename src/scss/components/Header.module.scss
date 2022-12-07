@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw;
+
+
+  .hero {
+    width: 60vw;
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+  .decoration {
+    margin: 1rem;
+    width: 10vw;
+  }
+  .buttons {
+    display: flex;
+  }
+  button {
+    font-size: 1.5rem;
+    width: 12rem;
+    margin: 1rem;
+    background: none;
+    border: 1px solid lightgrey;
+    text-transform: uppercase;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+  }
+}

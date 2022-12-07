@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+
+  .link {
+    margin: 1rem;
+  }
+  .signup {
+    border: 1px solid gold;
+    padding: 0.5rem;
+  }
+}
