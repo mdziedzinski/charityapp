@@ -5,11 +5,7 @@ import decoration from "../assets/Decoration.svg";
 const Header = () => {
   return (
     <header className={style.header}>
-      <img
-        src={hero}
-        className={style.hero}
-        alt=" things in a box"
-      ></img>
+      <img src={hero} className={style.hero} alt=" things in a box"></img>
       <aside className={style.aside}>
         <h1>Start helping!</h1>
         <h1>Give unwanted things in good hands</h1>

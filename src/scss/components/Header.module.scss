@@ -1,33 +1,38 @@
+@import "../settings/fonts";
+
 .header {
   display: flex;
   justify-content: flex-start;
-  width: 90vw;
-
+  align-items: center;
 
   .hero {
+    height: 80vh;
     width: 60vw;
+  object-fit: fill;
+    object-position: -35vw 0;
   }
   .aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    text-align: center;
   }
   h1 {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     margin: 0.5rem;
   }
   .decoration {
     margin: 1rem;
-    width: 10vw;
+    width: 20vw;
   }
   .buttons {
     display: flex;
   }
   button {
-    font-size: 1.5rem;
-    width: 12rem;
+    font-size: 2rem;
+    height: 10vh;
+    width: 16rem;
     margin: 1rem;
     background: none;
     border: 1px solid lightgrey;
