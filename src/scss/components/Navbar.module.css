@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-end;
+}
+.nav .link {
+  margin: 1rem;
+}
+.nav .signup {
+  border: 1px solid gold;
+  padding: 0.5rem;
+}/*# sourceMappingURL=Navbar.module.css.map */

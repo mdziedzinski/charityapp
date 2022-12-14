@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.decoration {
+  margin: 2rem;
+}
+
+.article {
+  background-color: #F0F1F1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-content: space-evenly;
+}
+.article .column {
+  text-align: center;
+  margin-inline: 5rem;
+  margin-block: 2rem;
+  font-weight: 300;
+}
+.article .column h1 {
+  font-size: 4.5rem;
+  margin: 1rem;
+}
+.article .column h3 {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.article .column p {
+  line-height: normal;
+  font-size: 0.85rem;
+}/*# sourceMappingURL=FourCols.module.css.map */

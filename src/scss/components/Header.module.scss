@@ -2,14 +2,14 @@
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  width: 90vw;
 
   .hero {
-    height: 80vh;
-    width: 60vw;
-  object-fit: fill;
-    object-position: -35vw 0;
+    width: 60%;
+    object-fit: cover;
+    object-position: -15vw 0;
   }
   .aside {
     display: flex;
@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 40%;
   }
   h1 {
     font-size: 2.2rem;
@@ -31,7 +32,7 @@
   }
   button {
     font-size: 2rem;
-    height: 10vh;
+    height: 15vh;
     width: 16rem;
     margin: 1rem;
     background: none;

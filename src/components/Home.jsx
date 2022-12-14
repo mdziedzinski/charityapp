@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import ThreeCols from "./ThreeCols";
 import FourCols from "./FourCols";
+import AboutUs from "./AboutUs";
+import Organizations from "./Organizations";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Header></Header>
       <ThreeCols></ThreeCols>
       <FourCols></FourCols>
+      <AboutUs></AboutUs>
+      <Organizations></Organizations>
     </>
   );
 };
