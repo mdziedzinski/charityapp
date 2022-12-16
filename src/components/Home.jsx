@@ -6,6 +6,7 @@ import ThreeCols from "./ThreeCols";
 import FourCols from "./FourCols";
 import AboutUs from "./AboutUs";
 import Organizations from "./Organizations";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <FourCols></FourCols>
       <AboutUs></AboutUs>
       <Organizations></Organizations>
+      <Contact></Contact>
     </>
   );
 };
