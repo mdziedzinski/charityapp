@@ -7,6 +7,8 @@ import FourCols from "./FourCols";
 import AboutUs from "./AboutUs";
 import Organizations from "./Organizations";
 import Contact from "./Contact";
+import Footer from "./Footer";
+
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
       <AboutUs></AboutUs>
       <Organizations></Organizations>
       <Contact></Contact>
+     
     </>
   );
 };

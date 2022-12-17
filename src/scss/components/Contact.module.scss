@@ -1,83 +1,81 @@
 @import "../settings/fonts";
 @import "../settings/colors";
 
-.container {
+.wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-
-  .mainBtn {
-    font-size: 1.2rem;
-    padding: 1rem;
-    width: 11rem;
-    margin: 1rem;
-    background: none;
-    border: 1px solid lightgrey;
-  }
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-}
-
-.decoration {
-  margin: 2rem;
-}
-
-.description {
-  line-height: normal;
-  font-size: 1rem;
+  justify-content: flex-start;
+  align-items: flex-end;
   text-align: center;
-  margin: 1rem;
-}
+  flex-direction: column;
 
-.tab {
-  width: 60%;
+  // height: 100vh;
+  background: linear-gradient(
+      to top,
+      rgba(245, 246, 252, 0.906),
+      rgba(255, 255, 255, 0.93)
+    ),
+    url(../../assets/Background-Contact-Form.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-  }
+  .container {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    text-align: start;
 
-  .orgName {
-    font-size: 1.2rem;
-  }
-
-  .orgGoal {
-    font-size: 0.9rem;
-  }
-
-  .orgThings {
-    font-size: 0.9rem;
-    opacity: 0.6;
-  }
-
-  .smallBtn {
-    font-size: 1rem;
-    padding: 1rem;
-    width: auto;
-    margin: 1rem;
-    background: none;
-    border: 1px solid lightgrey;
-  }
-
-  .outertab {
-    display: flex;
-    flex-direction: column;
-    .innertab {
-      display: flex;
-      justify-content: space-between;
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
     }
 
-    hr {
-      width: 100%;
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        opacity: 0.4;
+      }
     }
 
-    p {
-      align-self: flex-start;
+    button {
+      background-color: transparent;
+      border: 1px solid black;
+      padding: 1rem;
+      margin-block: 1rem;
+      font-size: 1rem;
+    }
+
+    img {
+      margin: 2rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+
+      .name {
+        grid-column: 1/2;
+      }
+
+      .emailInput {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      .emailLabel {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+
+      .textArea {
+        grid-column: 1/3;
+        height: 10rem;
+      }
+      button {
+        grid-column: 2/3;
+      }
     }
   }
 }

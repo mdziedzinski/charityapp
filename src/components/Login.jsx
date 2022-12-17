@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import style from "../scss/components/Contact.module.scss";
 import decoration from "../assets/Decoration.svg";
 import Footer from "./Footer";
-const Contact = () => {
+
+const Login = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
@@ -38,4 +39,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Login;
