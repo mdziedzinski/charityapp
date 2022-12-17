@@ -5,10 +5,12 @@
   justify-content: flex-end;
 
   .link {
-    padding: 1rem;
+    padding: 0.5rem;
+    &:global.active {
+      background-color: salmon;
+    }
   }
   .signup {
     border: 1px solid gold;
-    padding: 0.5rem;
   }
 }

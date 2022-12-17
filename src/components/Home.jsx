@@ -13,8 +13,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <>
-      <UserLogin></UserLogin>
-      <Navbar></Navbar>
+
       <Header></Header>
       <ThreeCols></ThreeCols>
       <FourCols></FourCols>

@@ -1,0 +1,40 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+.wrapper,
+.container,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container {
+  padding-inline: 5rem;
+  padding-block: 1rem;
+  background-color: lightgray;
+}
+form {
+  align-items: flex-start;
+  margin: 1rem;
+
+  label {
+    margin: 1rem;
+  }
+
+  input {
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+  }
+
+  button {
+    margin-block: 2rem;
+    background: none;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+}

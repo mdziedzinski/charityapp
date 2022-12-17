@@ -16,7 +16,7 @@ const Organizations = () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id="organizations">
       <h2>Who do we help</h2>
       <img src={decoration} className={style.decoration} alt="decoration"></img>
       <div className={style.buttons}>

@@ -29,11 +29,17 @@ const Login = () => {
               type="password"
               name="password"
             />{" "}
+            <label className={style.name}>Type your password again:</label>
+            <input
+              className={style.name}
+              type="password2"
+              name="password2"
+            />{" "}
           </div>
-          <NavLink to="/signup" className={style.secButton}>
-            Sign up
+          <NavLink to="/login" className={style.secButton}>
+         Log in
           </NavLink>
-          <button type="submit">Login</button>
+          <button type="submit">Sign up</button>
         </form>
         <Footer></Footer>
       </div>

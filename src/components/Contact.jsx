@@ -4,7 +4,7 @@ import decoration from "../assets/Decoration.svg";
 import Footer from "./Footer";
 const Contact = () => {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="contact">
       <div className={style.container}>
         <h2>Contact us</h2>
         <img src={decoration} alt="decoration" />

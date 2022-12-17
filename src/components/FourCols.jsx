@@ -8,7 +8,7 @@ import icon4 from "../assets/Icon-4.svg";
 
 const FourCols = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="whatisit">
       <h1>It takes just 4 simple steps</h1>
       <img src={decoration} className={style.decoration} alt="decoration"></img>
 
