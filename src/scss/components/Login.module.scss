@@ -11,6 +11,10 @@ form {
   flex-direction: column;
 }
 
+img {
+  margin: 1rem;
+}
+
 .container {
   padding-inline: 5rem;
   padding-block: 1rem;
@@ -31,10 +35,26 @@ form {
     background-color: transparent;
   }
 
-  button {
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-block: 2rem;
-    background: none;
-    border: 1px solid black;
-    padding: 1rem;
+   
+    width: 100%;
+
+    button {
+      background: none;
+      border: 1px solid black;
+      padding: 1rem;
+      background-color: rgba(250, 128, 114, 0.494);
+    }
+
+    .secButton {
+      font-size: 1rem;
+      background: none;
+      border: 1px solid black;
+      padding: 1rem;
+    }
   }
 }

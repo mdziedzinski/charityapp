@@ -5,19 +5,41 @@ import Footer from "./Footer";
 import LoginButtons from "./LoginButtons";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const { createUser } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await createUser(email, password);
+      navigate('/account')
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
+  };
+
   return (
     <>
       <LoginButtons></LoginButtons>
       <Navbar></Navbar>
       <div className={style.wrapper}>
-        <h2>Log in</h2>
+        <h2>Sign up</h2>
         <img src={decoration} alt="decoration" />
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={style.container}>
             <label className={style.emailLabel}>Type your e-mail </label>
             <input
+              onChange={(e) => setEmail(e.target.value)}
               className={style.emailInput}
               type="email"
               name="email"
@@ -25,21 +47,24 @@ const Login = () => {
             />
             <label className={style.name}>Type your password:</label>
             <input
+              onChange={(e) => setPassword(e.target.value)}
               className={style.name}
               type="password"
               name="password"
             />{" "}
             <label className={style.name}>Type your password again:</label>
             <input
-              className={style.name}
+              className={style.password}
               type="password2"
               name="password2"
             />{" "}
           </div>
-          <NavLink to="/login" className={style.secButton}>
-         Log in
-          </NavLink>
-          <button type="submit">Sign up</button>
+          <div className={style.buttons}>
+            <NavLink to="/login" className={style.secButton}>
+              Log in
+            </NavLink>
+            <button>Sign up</button>
+          </div>
         </form>
         <Footer></Footer>
       </div>
@@ -47,4 +72,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

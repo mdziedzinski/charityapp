@@ -4,9 +4,15 @@ import decoration from "../assets/Decoration.svg";
 import Footer from "./Footer";
 import LoginButtons from "./LoginButtons";
 import Navbar from "./Navbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
+  const { singIn } = UserAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
   return (
     <>
       <LoginButtons></LoginButtons>
@@ -14,7 +20,7 @@ const Login = () => {
       <div className={style.wrapper}>
         <h2>Log in</h2>
         <img src={decoration} alt="decoration" />
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={style.container}>
             <label className={style.emailLabel}>Type your e-mail </label>
             <input
@@ -30,10 +36,12 @@ const Login = () => {
               name="password"
             />{" "}
           </div>
-          <NavLink to="/signup" className={style.secButton}>
-            Sign up
-          </NavLink>
-          <button type="submit">Login</button>
+          <div className={style.buttons}>
+            <NavLink to="/signup" className={style.secButton}>
+              Sign up
+            </NavLink>
+            <button type="submit">Login</button>
+          </div>
         </form>
         <Footer></Footer>
       </div>
