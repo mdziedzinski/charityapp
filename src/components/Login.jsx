@@ -8,10 +8,23 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
-  const { singIn } = UserAuth();
+  const { signIn } = UserAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await signIn(email, password);
+      navigate("/");
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
+  };
 
   return (
     <>
@@ -24,6 +37,7 @@ const Login = () => {
           <div className={style.container}>
             <label className={style.emailLabel}>Type your e-mail </label>
             <input
+              onChange={(e) => setEmail(e.target.value)}
               className={style.emailInput}
               type="email"
               name="email"
@@ -31,6 +45,7 @@ const Login = () => {
             />
             <label className={style.name}>Type your password:</label>
             <input
+              onChange={(e) => setPassword(e.target.value)}
               className={style.name}
               type="password"
               name="password"

@@ -21,7 +21,7 @@ const Signup = () => {
     setError("");
     try {
       await createUser(email, password);
-      navigate('/account')
+      navigate("/account");
     } catch (e) {
       setError(e.message);
       console.log(e.message);
@@ -59,6 +59,7 @@ const Signup = () => {
               name="password2"
             />{" "}
           </div>
+          <div>{error}</div>
           <div className={style.buttons}>
             <NavLink to="/login" className={style.secButton}>
               Log in
