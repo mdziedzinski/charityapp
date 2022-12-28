@@ -50,7 +50,11 @@ const Login = () => {
               type="password"
               name="password"
             />{" "}
+            <div className={style.error}>
+              {error ? `There is something wrong ${error}` : console.log('no error')}
+            </div>
           </div>
+
           <div className={style.buttons}>
             <NavLink to="/signup" className={style.secButton}>
               Sign up

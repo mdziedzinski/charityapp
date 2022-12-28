@@ -21,7 +21,7 @@ const Signup = () => {
     setError("");
     try {
       await createUser(email, password);
-      navigate("/account");
+      navigate("/");
     } catch (e) {
       setError(e.message);
       console.log(e.message);
@@ -52,14 +52,13 @@ const Signup = () => {
               type="password"
               name="password"
             />{" "}
-            <label className={style.name}>Type your password again:</label>
-            <input
-              className={style.password}
-              type="password2"
-              name="password2"
-            />{" "}
+            <div className={style.error}>
+              {error
+                ? `There is something wrong ${error}`
+                : console.log("no error")}
+            </div>
           </div>
-          <div>{error}</div>
+
           <div className={style.buttons}>
             <NavLink to="/login" className={style.secButton}>
               Log in
