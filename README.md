@@ -1,4 +1,4 @@
-# ColorFilterApp
+# CharityAPP
 
 ![Design preview of the app](./preview.png)
 
@@ -19,4 +19,4 @@ This is simple single page application called Charity APP, created with create-r
 
 ## Live website :tada:
 
-- [ChairtyAPP live on Netlify](https://fabulous-blancmange-0b1b22.netlify.app/
+- [ChairtyAPP live on Netlify](https://fabulous-blancmange-0b1b22.netlify.app/)
