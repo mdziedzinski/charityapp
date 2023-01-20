@@ -5,9 +5,17 @@
   justify-content: flex-end;
 }
 .container .link {
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.container .link:global.active {
+  background-color: salmon;
 }
 .container .signup {
   border: 1px solid gold;
-  padding: 0.5rem;
+}
+.container .button {
+  background: none;
+  border: 1px solid salmon;
+  margin: 1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=LoginButtons.module.css.map */

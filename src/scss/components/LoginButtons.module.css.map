@@ -1,1 +1,1 @@
-{"version":3,"sources":["LoginButtons.module.scss","LoginButtons.module.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,WAAA;EACA,mBAAA;EACA,yBAAA;ACCF;ADCE;EACE,aAAA;ACCJ;ADCE;EACE,sBAAA;EACA,eAAA;ACCJ","file":"LoginButtons.module.css"}
+{"version":3,"sources":["LoginButtons.module.scss","LoginButtons.module.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,WAAA;EACA,mBAAA;EACA,yBAAA;ACCF;ADCE;EACE,eAAA;ACCJ;ADAI;EACE,wBAAA;ACEN;ADCE;EACE,sBAAA;ACCJ;ADEE;EACE,gBAAA;EACA,wBAAA;EACA,YAAA;EACA,eAAA;ACAJ","file":"LoginButtons.module.css"}

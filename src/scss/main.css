@@ -109,6 +109,8 @@ section {
 
 body {
   line-height: 1;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 ol,
@@ -136,4 +138,5 @@ table {
 
 body {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

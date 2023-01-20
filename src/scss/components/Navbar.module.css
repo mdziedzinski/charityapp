@@ -5,6 +5,12 @@
 }
 .nav .link {
   margin: 1rem;
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+}
+.nav .link:global.active {
+  background-color: rgba(250, 128, 114, 0.596);
 }
 .nav .signup {
   border: 1px solid gold;
