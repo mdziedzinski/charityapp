@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-This is my color filter app built using React. 
+Singe page app built using React. 
 
 ## Features
 
